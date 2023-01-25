@@ -1,8 +1,8 @@
 {
     "type": "mysql",
-    "host": "localhost",
+    "host": "172.18.0.2",
     "port": "3306",
-    "user": "root",
-    "password": "rootpassword",
-    "database": "mydb"
+    "user": "golang_devbook",
+    "password": "devbook_golang",
+    "database": "devbook"
 }
