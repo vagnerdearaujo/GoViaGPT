@@ -16,15 +16,15 @@ func main() {
 
 	db, err := db.Connect(dbConfig)
 	if err != nil {
-		fmt.Println("Error opening database:", dbConfig.Database, "\n", err)
+		fmt.Println("Erro ao tentar abrir o banco de dados:", dbConfig.Database, "\n", err)
 		return
 	}
 	defer db.Close()
 
 	err = db.Ping()
 	if err != nil {
-		fmt.Println("Error pinging database:", err)
+		fmt.Println("Erro ao tentar conectar no banco de dados:", err)
 		return
 	}
-	fmt.Println("Successfully connected to: ", dbConfig.Database)
+	fmt.Println("Conectado com successo ao: ", dbConfig.Database)
 }
